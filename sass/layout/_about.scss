@@ -1,0 +1,45 @@
+.about-section {
+  padding: 60px 0;
+}
+
+.about-wrapper {
+  @extend %flex-space-between;
+  gap: 72px;
+  padding: 0 32px;
+  align-items: start;
+
+  .thumb-img-bgc {
+    background-color: var(--circle-bg-color);
+    padding: 54px 45px 37px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: var(--box-shadow-card-skills);
+
+    ::before {
+      content: "";
+      position: absolute;
+      width: 482px;
+      height: 482px;
+      bottom: 37px;
+      left: 24px;
+      border-radius: 50%;
+      border: 3px solid var(--circle-photo-border-color-2);
+    }
+  }
+}
+
+.description {
+  h2 {
+    text-align: left;
+  }
+
+  & p {
+    width: 610px;
+    color: var(--logo-color);
+    letter-spacing: 0.32px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

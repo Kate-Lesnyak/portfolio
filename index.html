@@ -4,11 +4,479 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./assets/images/favicon-dev.png">
     <title>Portfolio</title>
 </head>
 
 <body>
+    <header class="header section">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">
+                    <svg width="175" height="33">
+                        <use href="./assets/images/sprite.svg#icon-Kateryna"></use>
+                    </svg>
+                    <svg width="136" height="27">
+                        <use href="./assets/images/sprite.svg#icon-Lisniak"></use>
+                    </svg>
+                </a>
+
+                <div class="nav-wrapper">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="/">About me</a></li>
+                        <li class="nav-item"><a href="#skills">Skills</a></li>
+                        <li class="nav-item"><a href="#projects">Projects</a>
+                        <li class="nav-item"><a href="#contact">Contact Me</a></li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1ITLQ9JABh4mFgJ1pkyxCUhaCzqJdF3hf/view?usp=sharing"
+                        class="button button-download" target="_blank" rel="noopener noreferrer">
+                        Resume
+                        <svg width="20" height="20">
+                            <use href="./assets/images/sprite.svg#icon-download"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <!-- <button type="button" class="mobile-burger-menu button-icon js-open-menu">
+            <svg width="24" height="24">
+                <use></use>
+            </svg>
+        </button> -->
+    </header>
+    <main>
+        <!-- Hero -->
+        <section class="hero-section section" id="hero">
+            <div class="container">
+                <h1 class="visually-hidden">Portfolio Kateryna Lisniak</h1>
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <p><span class="hello">Hello I&rsquo;am</span>
+                            <span class="name-surname">&nbsp;Kateryna Lisniak.</span>
+                            <span class="role">Front-End&nbsp;</span>
+                            <span class="role-opacity">Developer</span>
+                        </p>
+
+                        <p class="hero-description"> I&rsquo;m<b>&nbsp;Kateryna Lisniak.</b> I am a Junior Front-End
+                            Developer
+                            from Ukraine. I focus on
+                            HTML5,
+                            CSS3,
+                            JavaScript, React. </p>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="./assets/images/hero/girl-banner.png" alt="The girl sit on laptop" width="630"
+                            height="630">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section section" id="skills">
+            <div class="container">
+                <h2 class="section-title"><span>My&nbsp;</span>Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/html.png" alt="HTML5"></div>
+                        <p>HTML5</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/css.png" alt="CSS3"></div>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/html.png" alt="html"></div>
+                        <p>Sass/scss</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/javascript.png" alt="JavaScript"></div>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/rest-api.png" alt="REST API"></div>
+                        <p>REST API</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/ajax.png" alt="AJAX"></div>
+                        <p>AJAX</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/react.png" alt="React"></div>
+                        <p>React</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/react-redux.png" alt="React Redux">
+                        </div>
+                        <p>React Redux</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/webpack.png" alt="Webpack"></div>
+                        <p>Webpack</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/parcel.png" alt="Parcel"></div>
+                        <p>Parcel</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/node-js.png" alt="Node.js"></div>
+                        <p>Node.js</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/mongo-db.png" alt="MongoDB"></div>
+                        <p>MongoDB</p>
+                    </li>
+                    <li class="skills-item">
+                        <div class="thumb-img"><img src="./assets/images/skills/git.png" alt="Git"></div>
+                        <p>Git</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Experience -->
+        <section class="experience-section section" id="experience">
+            <div class="experience-wrapper-bgc">
+                <div class="container">
+                    <h2 class="section-title white"><span>My&nbsp;</span> experience</h2>
+
+                    <ul class="experience-list">
+                        <li class="experience-item secondary">
+                            <div class="wrap">
+                                <p class="role">A Front-End Developer / Baza Trainee Ukraine
+
+                                </p>
+                                <p class="period">Sep 2023 - present time</p>
+                            </div>
+                            <ul class="description">
+                                <li>- Develop and maintain web services and interfaces.</li>
+                                <li>- Contribute to front-end and back-end development processes.</li>
+                            </ul>
+                        </li>
+                        <li class="experience-item">
+                            <div class="wrap">
+                                <p class="role">Lawyer</p>
+                                <p class="period">Deс 2021 – present time</p>
+                            </div>
+                            <ul class="description">
+                                <li>- Representation of interests in state and local authorities.</li>
+                                <li>- Work on business contracts.</li>
+                                <li>- Consulting employees about juridical questions.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="thumb-img-bgc">
+                        <div class="thumb-img">
+                            <img src="./assets/images/about/photo.png" alt="Kate`s photo">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="section-title"><span>About&nbsp;</span>Me</h2>
+                        <p>I&rsquo;m a passionate, self-proclaimed Junior Full-Stack Developer. I am very enthusiastic
+                            about
+                            bringing the technical aspects of digital products to life. Writing clear, readable, highly
+                            performant code matters to me.</p>
+                        <p>I began my journey as a Junior Full-Stack Developer not so long ago, but it covers a huge
+                            part of
+                            my life. The world of full-stack development is large, and many new and evolving
+                            technologies
+                            continually push the limits of what I, as a full-stack developer, can create. Staying on top
+                            of
+                            cutting-edge technology and techniques in the full-stack development field is one of the
+                            many
+                            exciting aspects of working in this role.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section section" id="projects">
+            <div class="projects-wrapper-bgc">
+                <div class="container">
+                    <h2 class="section-title white"><span>My&nbsp;</span>Projects</h2>
+                    <ul class="projects-list">
+                        <li class="projects-item">
+                            <div class="content">
+                                <p class="number">01</p>
+                                <h3 class="title">Eng for UArmy</h3>
+                                <p class="description">A single-page application of learning military English for
+                                    Ukrainian
+                                    soldiers.
+                                    <br>
+                                    A responsive and adaptive layout. Mobile First.
+                                    Team project. <br> Role: a front-end developer. <br>Sections: "Reviews, slider",
+                                    "Thanks
+                                    (Contact us)". Pages: "Not found", "Privacy policy".
+
+                                </p>
+                                <ul class="buttons-list ">
+                                    <li class="buttons-item button white"><a href="https://engforuarmy.org/en"
+                                            target="_blank" rel="noopener noreferrer">View Live</a></li>
+                                    <li class="buttons-item button border-white "><a
+                                            href="https://github.com/baza-trainee/eng-for-uarmy" target="_blank"
+                                            rel="noopener noreferrer">Github Repo</a></li>
+                                </ul>
+                            </div>
+                            <div class="thumb-img"><img src="./assets/images/projects/eng-for-uarmy.png" alt="Soldier"
+                                    width="530">
+                            </div>
+                        </li>
+
+                        <li class="projects-item">
+                            <div class="content">
+                                <p class="number">02</p>
+                                <h3 class="title">Pickup Truck</h3>
+                                <p class="description">A landing page. Fund-raising for the 15th operational brigade of
+                                    Bogdan Zavada of Armed Forces of Ukraine.
+                                    A responsive and adaptive layout. Mobile First.
+                                    Team project. <br>Role: a front-end developer. <br>Sections: "There is strength in
+                                    unity", modal window "Share", modal window "Thanks", button "scroll to top", footer.
+
+
+
+                                </p>
+                                <ul class="buttons-list ">
+                                    <li class="buttons-item button white"><a href="https://pickup-truck.vercel.app/"
+                                            target="_blank" rel="noopener noreferrer">View Live</a></li>
+                                    <li class="buttons-item button border-white "><a
+                                            href="https://github.com/baza-trainee/pickup-truck" target="_blank"
+                                            rel="noopener noreferrer">Github Repo</a></li>
+                                </ul>
+                            </div>
+                            <div class="thumb-img"><img src="./assets/images/projects/pickup-truck.png" alt="Pickup"
+                                    width="530">
+                            </div>
+                        </li>
+
+                        <li class="projects-item">
+                            <div class="content">
+                                <p class="number">03</p>
+                                <h3 class="title">The 118th separate mechanized brigade</h3>
+                                <p class="description">A landing page. Fund-raising for the 118th separate mechanized
+                                    brigade of Armed Forces of Ukraine.
+                                    <br> A responsive and adaptive layout. Mobile First.
+                                    Team project. <br> Role: a front-end developer.<br> Sections: "Goal".
+                                </p>
+                                <ul class="buttons-list ">
+                                    <li class="buttons-item button white"><a
+                                            href="https://baza-trainee.github.io/reactive-brigade/" target="_blank"
+                                            rel="noopener noreferrer">View Live</a></li>
+                                    <li class="buttons-item button border-white "><a
+                                            href="https://github.com/baza-trainee/reactive-brigade" target="_blank"
+                                            rel="noopener noreferrer">Github Repo</a></li>
+                                </ul>
+                            </div>
+                            <div class="thumb-img"><img src="./assets/images/projects/118th-brigad.png" alt="Pickup"
+                                    width="530">
+                            </div>
+                        </li>
+
+                        <li class="projects-item">
+                            <div class="content">
+                                <p class="number">04</p>
+                                <h3 class="title">Fast wheels</h3>
+                                <p class="description">A landing page. Fund-raising for the 59th brigade of Armed Forces
+                                    of
+                                    Ukraine. <br>
+                                    A responsive and adaptive layout. Mobile First.
+                                    Team project. <br>Role: a front-end developer. <br>
+                                    Sections: "Header".
+                                </p>
+                                <ul class="buttons-list ">
+                                    <li class="buttons-item button white"><a
+                                            href="https://baza-trainee.github.io/winter-vechicles-landing-page/"
+                                            target="_blank" rel="noopener noreferrer">View Live</a></li>
+                                    <li class="buttons-item button border-white "><a
+                                            href="https://github.com/baza-trainee/winter-vechicles-landing-page"
+                                            target="_blank" rel="noopener noreferrer">Github Repo</a></li>
+                                </ul>
+                            </div>
+                            <div class="thumb-img"><img src="./assets/images/projects/fast-wheels.png" alt="Pickup"
+                                    width="530">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section section">
+            <div class="container">
+                <h2 class="section-title"><span>My&nbsp;</span>Testimonials</h2>
+                <div class="swiper">
+                    <ul class="testimonials-list">
+                        <li class="testimonials-item">
+                            <div class="thumb-img"><img src="./assets/images/teatimonials/veronika-timakova.png"
+                                    alt="Veronika Timakova"></div>
+                            <p class="description"> To work with Ekaterina is a great experience and pleasure. We both
+                                took part in team
+                                project at Baza Trainee and she demonstrated outstanding skills as a team member, she
+                                always ready to help and does her work diligently.
+                            </p>
+                            <div class="span"></div>
+                            <p class="name">Veronika Timakova</p>
+                            <p class="role">Junior Front-End Developer (HTML5, CSS3, JS, React)
+                            </p>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="thumb-img"><img src="./assets/images/teatimonials/olga-lesnyak.png"
+                                    alt="Olga Lesnyak"></div>
+                            <p class="description"> For me, as a UI/UX Designer, is very important to know all processes
+                                of creating a
+                                quality web product. I work with Kateryna on a common project at Baza Trainee. Thanks
+                                Kateryna I got to know about many details of site backend and frontend.
+                            </p>
+                            <div class="span"></div>
+                            <p class="name">
+                                Olga Lisniak
+                            </p>
+                            <p class="role">UI/UX Designer
+                            </p>
+                        </li>
+                    </ul>
+
+                    <ul class="testimonials-buttons-list">
+                        <li class="buttons-item"> <button class="button-icon" type="button"><svg width="15" height="10">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-left"></use>
+                                </svg></button></li>
+
+                        <li class="buttons-item"><button class="button-icon" type="button"><svg width="15" height="10">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-right"></use>
+                                </svg></button></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section section" id="contact">
+            <div class="contact-wrapper-bgc">
+                <div class="container">
+                    <h2 class="visually-hidden"> Contact me</h2>
+                    <div class="contact-content">
+                        <form class="form">
+                            <input type="text" name="username" placeholder="Your name" required />
+                            <input type="email" name="email" placeholder="Email" required />
+                            <input type="url" name="website" placeholder="Your website (If exists)">
+                            <textarea name="question" placeholder="Your question&rpar;*"></textarea>
+
+                            <div class="wrapper-button-social-list">
+                                <button class="button" type="submit">Get In Touch</button>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a class="social-item-link"
+                                            href="https://www.facebook.com/profile.php?id=100065310157852"
+                                            target="_blank" rel="noopener no-referrer">
+                                            <svg width="24" height="24">
+                                                <use href="./assets/images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a class="social-item-link"
+                                            href="https://www.linkedin.com/in/ekaterina-lesnyak/" target="_blank"
+                                            rel="noopener no-referrer">
+                                            <svg width="20" height="20">
+                                                <use href="./assets/images/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="social-item">
+                                        <a class="social-item-link" href="https://github.com/Kate-Lesnyak"
+                                            target="_blank" rel="noopener no-referrer">
+                                            <svg width="20" height="20">
+                                                <use href="./assets/images/sprite.svg#icon-github"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a class="social-item-link"
+                                            href="https://api.whatsapp.com/qr/GAOA4Z3SWETZC1?autoload=1&app_absent=0"
+                                            target="_blank" rel="noopener no-referrer">
+                                            <svg width="20" height="20">
+                                                <use href="./assets/images/sprite.svg#icon-telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a class="social-item-link" href="https://discord.com" target="_blank"
+                                            rel="noopener no-referrer" title="catharina#5163">
+                                            <svg width="20" height="20">
+                                                <use href="./assets/images/sprite.svg#icon-discord"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="social-item">
+                                        <a href="https://wa.me/380508078774" target="_blank" rel="noopener no-referrer">
+                                            whatsapp
+                                        </a>
+                                    </li> -->
+
+                                </ul>
+                            </div>
+                        </form>
+
+                        <div class="lets-talk">
+                            <p class="text">Let&#8217;s<span>&nbsp;&nbsp;talk&nbsp;&nbsp;</span>about<br>
+                                front-end development </p>
+                            <a class="email" href="mailto:catharinalesnyak@gmail.com">catharinalesnyak@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section section">
+        <div class="footer-wrapper-bgc">
+            <div class="footer-container container">
+                <a href="/" class="logo">
+                    <svg width="175" height="33">
+                        <use href="./assets/images/sprite.svg#icon-Kateryna"></use>
+                    </svg>
+                    <svg width="136" height="27">
+                        <use href="./assets/images/sprite.svg#icon-Lisniak"></use>
+                    </svg>
+                </a>
+                <p class="copy">&copy;&nbsp;Kateryna Lisniak - 2024</p>
+                <!-- Button to up -->
+                <button class="button-to-up" type="button"><svg width="24" height="28">
+                        <use href="./assets/images/sprite.svg#icon-btn-to-up"></use>
+                    </svg></button>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/btn-up-scroll.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

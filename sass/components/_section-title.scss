@@ -1,0 +1,23 @@
+.section-title {
+  color: var(--black-color-primary);
+  text-align: center;
+  letter-spacing: -0.96px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  & > span {
+    font-weight: 400;
+  }
+
+  &.white {
+    color: var(--white-color-primary);
+  }
+  //   @media screen and (max-width: 1440px) {
+  //     @include font(28px, 700, 33px);
+  //     margin-bottom: 30px;
+  //   }
+
+  @media screen and (min-width: 1440px) {
+    @include font(48px, 800, 56px);
+  }
+}

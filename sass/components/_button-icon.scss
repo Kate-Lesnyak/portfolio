@@ -1,0 +1,39 @@
+.button-icon-fill {
+  display: inline-block;
+  padding: 0;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition-property: fill;
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color-primary);
+  }
+}
+
+.button-icon {
+  @extend %flex-center;
+  border-radius: 50%;
+  padding: 16px 14px;
+  border: 1px solid var(--black-color-primary);
+  outline: none;
+  line-height: 0;
+  background-color: transparent;
+  stroke: var(--black-color-primary);
+  cursor: pointer;
+
+  transition-property: background-color, box-shadow, border;
+  transition: background-color var(--transition), box-shadow var(--transition),
+    border var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--grey-color-4);
+    box-shadow: var(--box-shadow-pagination);
+    border: 1px solid transparent;
+  }
+}

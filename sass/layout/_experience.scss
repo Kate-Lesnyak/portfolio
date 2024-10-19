@@ -1,0 +1,46 @@
+.experience-section {
+  padding-bottom: 0;
+}
+
+.experience-wrapper-bgc {
+  padding: 60px 0;
+  background-color: var(--black-color-primary);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .experience-item {
+    padding: 24px;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+    color: var(--white-color-secondary);
+
+    .wrap {
+      @extend %flex-space-between;
+      margin-bottom: 28px;
+    }
+
+    .role {
+      @include font(24px, 600, 28px);
+      letter-spacing: -0.48px;
+    }
+
+    .period {
+      color: var(--white-color-3);
+      @include font(16px, 600, 20px);
+      letter-spacing: -0.32px;
+    }
+
+    .description {
+      letter-spacing: 0.32px;
+    }
+  }
+
+  .experience-item.secondary {
+    background-color: var(--grey-color-2);
+    border: 1px solid transparent;
+  }
+}

@@ -1,0 +1,64 @@
+.contact-wrapper-bgc {
+  padding-top: 60px;
+}
+
+.contact-content {
+  @extend %flex-space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: inherit;
+  color: inherit;
+  margin-top: 20px;
+
+  input,
+  textarea {
+    width: 90%;
+    padding: 16px 24px;
+    border: 1.5px solid var(--black-color-primary);
+    border-radius: 4px;
+    outline: none;
+
+    ::placeholder {
+      @include font(16px, 400, 20px);
+      letter-spacing: -0.32px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.wrapper-button-social-list {
+  @extend %flex-space-between;
+  gap: 24px;
+
+  .button {
+    padding: 16px 20px;
+  }
+}
+
+.lets-talk {
+  padding: 20px 0;
+
+  .text {
+    @include font(48px, 800, 56px);
+    color: var(--black-color-primary);
+    letter-spacing: -0.96px;
+    margin-bottom: 40px;
+
+    & span {
+      color: var(--white-color-primary);
+      text-shadow: var(--text-shadow);
+    }
+  }
+
+  .email {
+    @include font(28px, 600, 32px);
+    color: var(--black-color-primary);
+  }
+}

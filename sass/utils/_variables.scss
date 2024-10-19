@@ -1,0 +1,32 @@
+:root {
+  --black-color-primary: #000000;
+  --white-color-primary: #ffffff;
+  --black-dark-color: #000036;
+  --black-color-btn-up: #231f20;
+  --white-color-secondary: #f6f3f3;
+  --white-color-3: #d4d4d8;
+  --white-color-btn-up: #d1d1d4;
+  --logo-color: #1a1a29;
+
+  --grey-bg-color-header-footer: rgba(26, 26, 41, 0.2);
+  --grey-color: #71717a;
+  --grey-color-2: #27272a;
+  --grey-color-3: #404040;
+  --grey-color-4: #cbcbcb;
+
+  --circle-bg-color: rgba(39, 39, 42, 0.2);
+  --circle-border-color-1: rgba(0, 0, 0, 0.4);
+  --circle-photo-border-color-2: #8d8c8c;
+
+  --box-shadow-card-skills: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-pagination: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-card: 0px 6px 8px -6px rgba(24, 39, 75, 0.12),
+    0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+  --text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black,
+    3px 3px 0 black, -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black;
+
+  --stroke-color: #231f20;
+
+  --transition: 300ms ease-in-out;
+}

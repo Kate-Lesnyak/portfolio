@@ -1,0 +1,18 @@
+.footer-section {
+  padding-bottom: 0;
+}
+
+.footer-wrapper-bgc {
+  padding: 24px 0;
+  background-color: var(--grey-bg-color-header-footer);
+}
+
+.footer-container {
+  @extend %flex-space-between;
+
+  .copy {
+    color: var(--logo-color);
+    @include font(16px, 600, 20px);
+    letter-spacing: -0.32px;
+  }
+}

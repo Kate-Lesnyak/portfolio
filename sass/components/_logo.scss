@@ -1,0 +1,18 @@
+.logo {
+  transition-property: fill;
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
+    // fill: var(--grey-color-2);
+    fill: var(--black-dark-color);
+  }
+}
+
+.logo > svg {
+  display: block;
+
+  &:last-child {
+    margin-top: -10px;
+  }
+}
