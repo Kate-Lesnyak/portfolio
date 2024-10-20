@@ -30,8 +30,7 @@
   transition: background-color var(--transition), box-shadow var(--transition),
     border var(--transition);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--grey-color-4);
     box-shadow: var(--box-shadow-pagination);
     border: 1px solid transparent;

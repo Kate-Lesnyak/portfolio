@@ -2,10 +2,12 @@
   margin-bottom: 60px;
 }
 
-.testimonials-item {
+.testimonials-item.swiper-slide {
+  width: 546px !important;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: var(--box-shadow-card);
+  // box-shadow: var(--box-shadow-card);
+  box-shadow: var(--box-shadow-card-skills);
   text-align: center;
 
   .thumb-img {
@@ -41,9 +43,4 @@
     color: var(--grey-color);
     letter-spacing: 0.32px;
   }
-}
-
-.testimonials-buttons-list {
-  @extend %flex-center;
-  gap: 16px;
 }

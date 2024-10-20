@@ -326,14 +326,17 @@
         <section class="testimonials-section section">
             <div class="container">
                 <h2 class="section-title"><span>My&nbsp;</span>Testimonials</h2>
-                <div class="swiper">
-                    <ul class="testimonials-list">
-                        <li class="testimonials-item">
+                <div class="swiper mySwiper">
+
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonials-item swiper-slide ">
                             <div class="thumb-img"><img src="./assets/images/teatimonials/veronika-timakova.png"
                                     alt="Veronika Timakova"></div>
-                            <p class="description"> To work with Ekaterina is a great experience and pleasure. We both
+                            <p class="description"> To work with Ekaterina is a great experience and pleasure. We
+                                both
                                 took part in team
-                                project at Baza Trainee and she demonstrated outstanding skills as a team member, she
+                                project at Baza Trainee and she demonstrated outstanding skills as a team member,
+                                she
                                 always ready to help and does her work diligently.
                             </p>
                             <div class="span"></div>
@@ -342,12 +345,14 @@
                             </p>
                         </li>
 
-                        <li class="testimonials-item">
+                        <li class="testimonials-item swiper-slide ">
                             <div class="thumb-img"><img src="./assets/images/teatimonials/olga-lesnyak.png"
                                     alt="Olga Lesnyak"></div>
-                            <p class="description"> For me, as a UI/UX Designer, is very important to know all processes
+                            <p class="description"> For me, as a UI/UX Designer, is very important to know all
+                                processes
                                 of creating a
-                                quality web product. I work with Kateryna on a common project at Baza Trainee. Thanks
+                                quality web product. I work with Kateryna on a common project at Baza Trainee.
+                                Thanks
                                 Kateryna I got to know about many details of site backend and frontend.
                             </p>
                             <div class="span"></div>
@@ -357,19 +362,46 @@
                             <p class="role">UI/UX Designer
                             </p>
                         </li>
+                        <li class="testimonials-item swiper-slide ">
+                            <div class="thumb-img"><img src="./assets/images/teatimonials/olga-lesnyak.png"
+                                    alt="Olga Lesnyak"></div>
+                            <p class="description"> For me, as a UI/UX Designer, is very important to know all
+                                processes
+                                of creating a
+                                quality web product. I work with Kateryna on a common project at Baza Trainee.
+                                Thanks
+                                Kateryna I got to know about many details of site backend and frontend.
+                            </p>
+                            <div class="span"></div>
+                            <p class="name">
+                                Olga Lisniak
+                            </p>
+                            <p class="role">UI/UX Designer
+                            </p>
+                        </li>
+                        <li class="testimonials-item swiper-slide ">
+                            <div class="thumb-img"><img src="./assets/images/teatimonials/veronika-timakova.png"
+                                    alt="Veronika Timakova"></div>
+                            <p class="description"> To work with Ekaterina is a great experience and pleasure. We
+                                both
+                                took part in team
+                                project at Baza Trainee and she demonstrated outstanding skills as a team member,
+                                she
+                                always ready to help and does her work diligently.
+                            </p>
+                            <div class="span"></div>
+                            <p class="name">Veronika Timakova</p>
+                            <p class="role">Junior Front-End Developer (HTML5, CSS3, JS, React)
+                            </p>
+                        </li>
                     </ul>
+                    <button class="button-icon swiper-button-next" type="button"><svg width="15" height="10">
+                            <use href="./assets/images/sprite.svg#icon-arrow-right"></use>
+                        </svg></button>
 
-                    <ul class="testimonials-buttons-list">
-                        <li class="buttons-item"> <button class="button-icon" type="button"><svg width="15" height="10">
-                                    <use href="./assets/images/sprite.svg#icon-arrow-left"></use>
-                                </svg></button></li>
-
-                        <li class="buttons-item"><button class="button-icon" type="button"><svg width="15" height="10">
-                                    <use href="./assets/images/sprite.svg#icon-arrow-right"></use>
-                                </svg></button></li>
-                    </ul>
-
-
+                    <button class="button-icon swiper-button-prev" type="button"><svg width="15" height="10">
+                            <use href="./assets/images/sprite.svg#icon-arrow-left"></use>
+                        </svg></button>
                 </div>
             </div>
         </section>
@@ -452,7 +484,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer-section section">
+    <footer class="footer section">
         <div class="footer-wrapper-bgc">
             <div class="footer-container container">
                 <a href="/" class="logo">
@@ -470,11 +502,12 @@
                     </svg></button>
             </div>
         </div>
-
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/header-scroll.js"></script>
     <script src="./js/btn-up-scroll.js"></script>
+    <script src="./js/swiper.js"></script>
     <!-- <script src="./js/mobile-menu.js"></script> -->
 </body>
 
