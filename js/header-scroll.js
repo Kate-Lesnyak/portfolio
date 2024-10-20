@@ -1,4 +1,4 @@
-const header = document.querySelector('.header', handleHeaderScroll);
+const header = document.querySelector('.header.section');
 
 const handleHeaderScroll = () => {
     if (window.scrollY > 300) {

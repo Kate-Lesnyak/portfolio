@@ -13,6 +13,7 @@
   background-color: var(--white-color-btn-up);
   stroke: var(--black-color-btn-up);
   opacity: 0;
+  cursor: pointer;
 
   transition-property: background-color, stroke, opacity;
   transition: background-color var(--transition), stroke var(--transition),
