@@ -1,9 +1,6 @@
 .section-title {
   color: var(--black-color-primary);
   text-align: center;
-  letter-spacing: -0.96px;
-  padding: 20px 0;
-  margin-bottom: 20px;
 
   & > span {
     font-weight: 400;
@@ -12,12 +9,17 @@
   &.white {
     color: var(--white-color-primary);
   }
-  //   @media screen and (max-width: 1440px) {
-  //     @include font(28px, 700, 33px);
-  //     margin-bottom: 30px;
-  //   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $tablet) {
+    @include font(30px, 800, 56px);
+    padding: 8px 0;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
     @include font(48px, 800, 56px);
+    letter-spacing: -0.96px;
+    padding: 20px 0;
+    margin-bottom: 20px;
   }
 }

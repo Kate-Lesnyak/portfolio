@@ -1,9 +1,17 @@
 .skills-list {
   @extend %flex-center;
   flex-wrap: wrap;
-  column-gap: 100px;
-  row-gap: 40px;
-  padding: 40px 32px;
+
+  @media screen and (min-width: $tablet) {
+    column-gap: 60px;
+    row-gap: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    column-gap: 100px;
+    row-gap: 40px;
+    padding: 40px 32px;
+  }
 
   .skills-item {
     flex-basis: calc((100% - 100px * 4) / 5);
@@ -26,6 +34,14 @@
       color: var(--black-color-primary);
       @include font(20px, 700, 24px);
       letter-spacing: -0.4px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 60px * 2) / 3);
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 100px * 4) / 5);
     }
   }
 }
