@@ -1,9 +1,15 @@
-.contact-wrapper-bgc {
-  padding-top: 60px;
-}
-
 .contact-content {
-  @extend %flex-space-between;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include flexSpaceBetween();
+    flex-direction: row;
+    padding-top: 60px;
+  }
 }
 
 .form {
@@ -12,11 +18,10 @@
   gap: 20px;
   font-family: inherit;
   color: inherit;
-  margin-top: 20px;
+  padding-top: 20px;
 
   input,
   textarea {
-    width: 90%;
     padding: 16px 24px;
     border: 1.5px solid var(--black-color-primary);
     border-radius: 4px;
@@ -31,25 +36,36 @@
   textarea {
     resize: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    input,
+    textarea {
+      width: 90%;
+    }
+  }
 }
 
 .wrapper-button-social-list {
-  @extend %flex-space-between;
-  gap: 24px;
-
   .button {
     padding: 16px 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 24px;
   }
 }
 
 .lets-talk {
-  padding: 20px 0;
-
   .text {
-    @include font(48px, 800, 56px);
+    @include font(30px, 800, 56px);
+    letter-spacing: -0.6px;
     color: var(--black-color-primary);
-    letter-spacing: -0.96px;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
 
     & span {
       color: var(--white-color-primary);
@@ -60,5 +76,13 @@
   .email {
     @include font(28px, 600, 32px);
     color: var(--black-color-primary);
+  }
+
+  @media screen and (min-width: $desktop) {
+    .text {
+      @include font(48px, 800, 56px);
+      letter-spacing: -0.96px;
+      margin-bottom: 40px;
+    }
   }
 }

@@ -1,5 +1,17 @@
 @mixin font($fs: 16px, $fw: 400, $lh: 24px) {
-	font-size: $fs;
-	font-weight: $fw;
-	line-height: calc($lh / $fs);
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: calc($lh / $fs);
+}
+
+@mixin flexCenter($d: flex, $jc: center, $ai: center) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin flexSpaceBetween($d: flex, $jc: space-between, $ai: center) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
 }

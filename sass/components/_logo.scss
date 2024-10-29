@@ -11,20 +11,22 @@
 .logo > svg {
   display: block;
 
-  &:first-child {
-    @media screen and (max-width: $max-desktop) {
+  @media screen and (max-width: $max-desktop) {
+    &:first-child {
       width: 119px;
+    }
+
+    &:last-child {
+      width: 92px;
+      margin-top: -16px;
     }
   }
 
   &:last-child {
-    @media screen and (max-width: $max-desktop) {
-      width: 92px;
-      margin-top: -16px;
-    }
-
     @media screen and (min-width: $desktop) {
-      margin-top: -10px;
+      &:last-child {
+        margin-top: -10px;
+      }
     }
   }
 }

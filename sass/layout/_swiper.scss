@@ -1,5 +1,11 @@
 .swiper {
-  padding: 0 4px 40px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 4px 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 3px 40px;
+  }
 }
 
 .swiper-button-prev:after,
@@ -17,12 +23,12 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  @media screen and (min-width: 760px) {
-    left: var(--swiper-navigation-sides-offset, 330px);
+  @media screen and (min-width: $tablet) {
+    left: var(--swiper-navigation-sides-offset, 290px);
     right: auto;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     left: var(--swiper-navigation-sides-offset, 590px);
     right: auto;
   }
@@ -30,12 +36,12 @@
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  @media screen and (min-width: 760px) {
-    right: var(--swiper-navigation-sides-offset, 330px);
+  @media screen and (min-width: $tablet) {
+    right: var(--swiper-navigation-sides-offset, 290px);
     left: auto;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $desktop) {
     right: var(--swiper-navigation-sides-offset, 590px);
     left: auto;
   }

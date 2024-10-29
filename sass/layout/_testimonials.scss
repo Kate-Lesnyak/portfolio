@@ -1,21 +1,22 @@
+.testimonials-section {
+  padding-top: 20px;
+}
+
 .testimonials-list {
-  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .testimonials-item {
   border-radius: 20px;
-  box-shadow: var(--box-shadow-card);
+  // box-shadow: var(--box-shadow-card);
+  box-shadow: var(--box-shadow-card-skills);
   text-align: center;
-
-  @media screen and (min-width: 760px) {
-    width: 696px !important;
-    padding: 48px 28px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 546px !important;
-    padding: 40px;
-  }
 
   .thumb-img {
     width: 96px;
@@ -49,5 +50,15 @@
     @include font(16px, 600, 20px);
     color: var(--grey-color);
     letter-spacing: 0.32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 615px !important;
+    padding: 24px 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 546px !important;
+    padding: 40px;
   }
 }
