@@ -3,8 +3,12 @@
 }
 
 .footer-wrapper-bgc {
-  padding: 24px 0;
+  padding: 14px 0;
   background-color: var(--grey-bg-color-header-footer);
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px 0;
+  }
 }
 
 .footer-container {
@@ -12,7 +16,12 @@
 
   .copy {
     color: var(--logo-color);
-    @include font(16px, 400, 20px);
-    letter-spacing: -0.32px;
+    @include font(12px, 400, 12px);
+    letter-spacing: -0.24px;
+
+    @media screen and (min-width: $tablet) {
+      @include font(16px, 400, 20px);
+      letter-spacing: -0.32px;
+    }
   }
 }

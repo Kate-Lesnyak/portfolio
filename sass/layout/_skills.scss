@@ -1,6 +1,7 @@
 .skills-list {
   @extend %flex-center;
   flex-wrap: wrap;
+  gap: 24px;
 
   @media screen and (min-width: $tablet) {
     column-gap: 60px;
@@ -14,16 +15,15 @@
   }
 
   .skills-item {
-    flex-basis: calc((100% - 100px * 4) / 5);
-    max-width: 186px;
+    max-width: 132px;
+    flex-basis: calc((100% - 24px) / 2);
     align-self: stretch;
     @extend %flex-center;
     flex-direction: column;
-    gap: 32px;
-    text-align: center;
+    gap: 16px;
     padding: 24px 16px;
+    text-align: center;
     border: 2px solid var(--black-color-primary);
-    box-shadow: var(--);
     box-shadow: var(--box-shadow-card-skills);
 
     .thumb-img {
@@ -31,13 +31,21 @@
     }
 
     p {
+      @include font(16px, 700, 24px);
+      letter-spacing: -0.32px;
       color: var(--black-color-primary);
-      @include font(20px, 700, 24px);
-      letter-spacing: -0.4px;
+
+      @media screen and (min-width: $tablet) {
+        @include font(20px, 700, 24px);
+        letter-spacing: -0.4px;
+      }
     }
 
     @media screen and (min-width: $tablet) {
+      max-width: 186px;
       flex-basis: calc((100% - 60px * 2) / 3);
+      gap: 32px;
+      padding: 24px 16px;
     }
 
     @media screen and (min-width: $desktop) {

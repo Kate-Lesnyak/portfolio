@@ -4,10 +4,7 @@
 
 .experience-wrapper-bgc {
   background-color: var(--black-color-primary);
-
-  @media screen and (min-width: $desktop) {
-    padding: 24px 0;
-  }
+  padding: 24px 0;
 
   @media screen and (min-width: $desktop) {
     padding: 60px 0;
@@ -19,16 +16,6 @@
   flex-direction: column;
   gap: 20px;
 
-  @media screen and (min-width: $tablet) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .experience-item {
     padding: 30px 24px;
     border: 1px solid var(--grey-color);
@@ -36,43 +23,77 @@
     color: var(--white-color-secondary);
 
     .wrap {
-      @extend %flex-space-between;
       margin-bottom: 28px;
-    }
 
-    .role {
-      @media screen and (min-width: $tablet) {
+      .role {
         @include font(16px, 600, 28px);
         letter-spacing: -0.32px;
       }
 
-      @media screen and (min-width: $desktop) {
-        @include font(24px, 600, 28px);
-        letter-spacing: -0.48px;
+      .period {
+        color: var(--white-color-3);
+        @include font(12px, 600, 20px);
+        letter-spacing: -0.24px;
       }
-    }
-
-    .period {
-      color: var(--white-color-3);
-
-      @media screen and (min-width: $tablet) {
-        @include font(14px, 600, 20px);
-        letter-spacing: -0.28px;
-      }
-
-      @media screen and (min-width: $desktop) {
-        @include font(16px, 600, 20px);
-        letter-spacing: -0.32px;
-      }
-    }
-
-    .description {
-      letter-spacing: 0.32px;
     }
   }
 
   .experience-item.secondary {
     background-color: var(--grey-color-2);
     border: 1px solid transparent;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    .experience-item {
+      .wrap {
+        .role {
+          margin-bottom: 28px;
+        }
+      }
+
+      .description {
+        @include font(14px, 400, 24px);
+        letter-spacing: 0.28px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .experience-item {
+      .wrap {
+        @include flexSpaceBetween;
+
+        .period {
+          @include font(14px, 600, 20px);
+          letter-spacing: -0.28px;
+        }
+      }
+
+      .description {
+        letter-spacing: 0.32px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .experience-item {
+      .wrap {
+        .role {
+          @include font(24px, 600, 28px);
+          letter-spacing: -0.48px;
+        }
+
+        .period {
+          @include font(16px, 600, 20px);
+          letter-spacing: -0.32px;
+        }
+      }
+    }
   }
 }

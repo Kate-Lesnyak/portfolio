@@ -1,9 +1,7 @@
 .contact-content {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: column-reverse;
-    row-gap: 24px;
-  }
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 24px;
 
   @media screen and (min-width: $desktop) {
     @include flexSpaceBetween();
@@ -18,7 +16,6 @@
   gap: 20px;
   font-family: inherit;
   color: inherit;
-  padding-top: 20px;
 
   input,
   textarea {
@@ -38,6 +35,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+
     input,
     textarea {
       width: 90%;
@@ -46,12 +45,21 @@
 }
 
 .wrapper-button-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
   .button {
     padding: 16px 20px;
   }
 
+  @media screen and (max-width: $max-tablet) {
+    .button {
+      width: 100%;
+    }
+  }
+
   @media screen and (min-width: $tablet) {
-    display: flex;
     gap: 40px;
   }
 
@@ -62,9 +70,9 @@
 
 .lets-talk {
   .text {
-    @include font(30px, 800, 56px);
-    letter-spacing: -0.6px;
     color: var(--black-color-primary);
+    @include font(24px, 800, 48px);
+    letter-spacing: -0.48px;
     margin-bottom: 8px;
 
     & span {
@@ -74,8 +82,21 @@
   }
 
   .email {
-    @include font(28px, 600, 32px);
+    @include font(16px, 600, 32px);
+    letter-spacing: -0.32px;
     color: var(--black-color-primary);
+  }
+
+  @media screen and (min-width: $tablet) {
+    .text {
+      @include font(30px, 800, 56px);
+      letter-spacing: -0.6px;
+    }
+
+    .email {
+      @include font(28px, 600, 32px);
+      letter-spacing: -0.56px;
+    }
   }
 
   @media screen and (min-width: $desktop) {

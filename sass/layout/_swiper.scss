@@ -1,8 +1,9 @@
 .swiper {
+  padding: 0 4px 60px;
+
   @media screen and (min-width: $tablet) {
     padding: 0 4px 40px;
   }
-
   @media screen and (min-width: $desktop) {
     padding: 0 3px 40px;
   }
@@ -13,8 +14,8 @@
   content: '';
 }
 
-.button-icon.swiper-button-next,
-.button-icon.swiper-button-prev {
+.button-icon-arrow.swiper-button-next,
+.button-icon-arrow.swiper-button-prev {
   width: 44px;
   height: 44px;
   position: absolute;
@@ -23,6 +24,9 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 90px);
+  right: auto;
+
   @media screen and (min-width: $tablet) {
     left: var(--swiper-navigation-sides-offset, 290px);
     right: auto;
@@ -36,6 +40,9 @@
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 90px);
+  left: auto;
+
   @media screen and (min-width: $tablet) {
     right: var(--swiper-navigation-sides-offset, 290px);
     left: auto;

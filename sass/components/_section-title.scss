@@ -1,6 +1,9 @@
 .section-title {
+  @include font(24px, 800, 24px);
+  letter-spacing: -0.48px;
   color: var(--black-color-primary);
   text-align: center;
+  margin-bottom: 24px;
 
   & > span {
     font-weight: 400;
@@ -13,7 +16,6 @@
   @media screen and (min-width: $tablet) {
     @include font(30px, 800, 56px);
     padding: 8px 0;
-    margin-bottom: 24px;
   }
 
   @media screen and (min-width: $desktop) {

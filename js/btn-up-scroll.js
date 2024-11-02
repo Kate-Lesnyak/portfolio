@@ -5,7 +5,6 @@ const handleBtnScroll = () => {
         btn.classList.add('btn-scroll');
     } else {
         btn.classList.remove('btn-scroll');
-
     }
 }
 

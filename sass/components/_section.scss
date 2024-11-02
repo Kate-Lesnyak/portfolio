@@ -1,5 +1,8 @@
 .section {
-  @media screen and (max-width: $max-desktop) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
     padding-top: 40px;
     padding-bottom: 40px;
   }

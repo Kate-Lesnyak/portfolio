@@ -7,12 +7,17 @@
   z-index: 1000;
   color: var(--white-color);
   background-color: var(--grey-bg-color-header-footer);
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   border-bottom: 1px solid var(--black-color-primary);
 
   transition-property: background-color;
   transition: background-color var(--transition);
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 28px;
@@ -31,6 +36,10 @@
 
 .nav-wrapper {
   @extend %flex-space-between;
+
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+  }
 
   @media screen and (min-width: $tablet) {
     gap: 36px;
@@ -82,5 +91,11 @@
     @media screen and (max-width: $max-desktop) {
       width: 32px;
     }
+  }
+}
+
+.mobile-menu-open {
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }

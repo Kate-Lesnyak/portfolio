@@ -1,6 +1,7 @@
 .social-list {
-  @include flexSpaceBetween();
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 
   .social-item {
     border: 1px solid var(--black-color-primary);
@@ -14,6 +15,10 @@
     &:focus {
       transform: scale(1.1);
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
   }
 
   @media screen and (min-width: $desktop) {

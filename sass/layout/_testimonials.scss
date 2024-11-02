@@ -3,6 +3,8 @@
 }
 
 .testimonials-list {
+  margin-bottom: 16px;
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
   }
@@ -13,48 +15,76 @@
 }
 
 .testimonials-item {
+  width: 247px !important;
+  height: auto;
+  padding: 16px;
   border-radius: 20px;
-  // box-shadow: var(--box-shadow-card);
-  box-shadow: var(--box-shadow-card-skills);
+  box-shadow: var(--box-shadow-card);
   text-align: center;
 
   .thumb-img {
     width: 96px;
     border-radius: 50%;
-    margin: 0 auto 24px;
+    margin: 0 auto 16px;
+    overflow: hidden;
   }
 
   .description {
     color: var(--logo-colo);
     text-align: center;
-    @include font(16px, 400, 20px);
-    letter-spacing: 0.32px;
-    margin-bottom: 24px;
+    @include font(14px, 400, 20px);
+    letter-spacing: 0.28px;
+    margin-bottom: 16px;
   }
 
   .span {
     width: 120px;
     height: 2px;
     background-color: var(--black-color-primary);
-    margin: 0 auto 24px;
+    margin: 0 auto 16px;
   }
 
   .name {
-    @include font(20px, 600, 24px);
+    @include font(16px, 600, 24px);
     color: var(--grey-color-3);
-    letter-spacing: -0.4px;
-    margin-bottom: 24px;
+    letter-spacing: -0.32px;
+    margin-bottom: 16px;
   }
 
   .role {
-    @include font(16px, 600, 20px);
+    @include font(14px, 600, 20px);
     color: var(--grey-color);
-    letter-spacing: 0.32px;
+    letter-spacing: -0.28px;
   }
 
   @media screen and (min-width: $tablet) {
     width: 615px !important;
     padding: 24px 28px;
+
+    .thumb-img {
+      margin: 0 auto 24px;
+    }
+
+    .description {
+      @include font(16px, 400, 20px);
+      letter-spacing: 0.32px;
+      margin-bottom: 24px;
+    }
+
+    .span {
+      margin: 0 auto 24px;
+    }
+
+    .name {
+      @include font(20px, 600, 24px);
+      letter-spacing: -0.4px;
+      margin-bottom: 24px;
+    }
+
+    .role {
+      @include font(16px, 600, 20px);
+      letter-spacing: -0.32px;
+    }
   }
 
   @media screen and (min-width: $desktop) {

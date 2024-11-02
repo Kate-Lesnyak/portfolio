@@ -1,4 +1,6 @@
 .hero-section {
+  padding-top: 80px;
+
   @media screen and (min-width: $tablet) {
     padding-top: 160px;
     padding-bottom: 20px;
@@ -7,10 +9,23 @@
   @media screen and (min-width: $desktop) {
     padding-top: 180px;
   }
+
+  .container {
+    @media screen and (max-width: $max-tablet) {
+      padding-top: 40px;
+      background-image: url('../../assets/images/hero/girl-banner-mobile.png');
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+    }
+  }
 }
 
 .hero-wrapper {
   @extend %flex-center;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 24px;
+  }
 
   @media screen and (min-width: $tablet) {
     gap: 24px;
@@ -32,9 +47,11 @@
 
   .hero-description {
     color: var(--logo-color);
+    @include font(14px, 400, 24px);
+    letter-spacing: 0.28px;
 
     @media screen and (min-width: $tablet) {
-      width: 408px;
+      width: 414px;
       @include font(16px, 400, 40px);
       letter-spacing: 0.32px;
     }
@@ -49,6 +66,14 @@
 
 .hero-content > p {
   color: var(--black-color-primary);
+  letter-spacing: -0.32px;
+  margin-bottom: 8px;
+
+  &:first-of-type {
+    @media screen and (max-width: $max-tablet) {
+      width: 250px;
+    }
+  }
 
   @media screen and (min-width: $tablet) {
     letter-spacing: -0.6px;
@@ -61,6 +86,8 @@
   }
 
   .hello {
+    @include font(16px, 400, 16px);
+
     @media screen and (min-width: $tablet) {
       @include font(30px, 400, 56px);
     }
@@ -71,6 +98,8 @@
   }
 
   .name-surname {
+    @include font(16px, 700, 16px);
+
     @media screen and (min-width: $tablet) {
       @include font(30px, 700, 56px);
     }
@@ -81,6 +110,8 @@
   }
 
   .role {
+    @include font(16px, 800, 16px);
+
     @media screen and (min-width: $tablet) {
       @include font(30px, 800, 56px);
     }
@@ -93,6 +124,7 @@
   .role-opacity {
     color: var(--white-color-primary);
     text-shadow: var(--text-shadow);
+    @include font(16px, 800, 16px);
 
     @media screen and (min-width: $tablet) {
       @include font(30px, 800, 56px);
@@ -105,7 +137,10 @@
 }
 
 .hero-image {
+  display: none;
+
   @media screen and (min-width: $tablet) {
+    display: block;
     width: 268px;
     height: 268px;
   }
@@ -114,4 +149,16 @@
     width: 630px;
     height: 630px;
   }
+}
+
+.mobile-button.button-download.button {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @extend %flex-center;
+  gap: 8px;
+  padding: 16px 20px;
+  @include font(16px, 600, 24px);
+  letter-spacing: 0.32px;
 }
