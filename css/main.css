@@ -296,16 +296,15 @@ body.modal-open {
 
 .button-to-up {
   position: fixed;
-  right: 30px;
-  bottom: 105px;
-  width: 75px;
-  height: 75px;
+  right: 16px;
+  bottom: 40px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   padding: 14px 16px;
   outline: none;
   line-height: 0;
   border: 1px solid var(--black-color-btn-up);
-  background-color: var(--);
   stroke: var(--black-color-btn-up);
   opacity: 0;
   cursor: pointer;
@@ -315,6 +314,14 @@ body.modal-open {
 }
 .button-to-up:hover {
   background-color: var(--white-color-primary);
+}
+@media screen and (min-width: 760px) {
+  .button-to-up {
+    right: 30px;
+    bottom: 105px;
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .btn-scroll {
